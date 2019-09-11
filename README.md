@@ -1,3 +1,3 @@
 | Date | Event | 
 | ------------- | ------------- |  
-| Kaggle expert | 11.09.2019 |
+| 11.09.2019 | Kaggle competitions expert |
