@@ -1,0 +1,1 @@
+%windir%\System32\cmd.exe "/K" C:\conda\Scripts\activate.bat C:\conda
