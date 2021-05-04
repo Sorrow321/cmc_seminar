@@ -1,0 +1,52 @@
+% настройки polyglossia
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+
+% локализация
+\graphicspath{ {} }
+\addto\captionsrussian{
+	\renewcommand{\partname}{Глава}
+	\renewcommand{\contentsname}{Содержание}
+	\renewcommand{\figurename}{Рисунок}
+	\renewcommand{\listingscaption}{Листинг}
+}
+
+% основной шрифт документа
+\setmainfont{CMU Serif}
+
+% перечень использованных источников
+\addbibresource{refs.bib}
+
+% оформление презентации
+\usetheme{metropolis}
+\usecolortheme{seagull}
+\beamertemplatenavigationsymbolsempty
+
+% настройка ссылок и метаданных документа
+\hypersetup{unicode=true,colorlinks=true,linkcolor=red,citecolor=green,filecolor=magenta,urlcolor=cyan,
+	pdftitle={\docname},
+	pdfauthor={\studentname},
+	pdfsubject={\docname},
+	pdfcreator={\studentname},
+	pdfproducer={Overleaf},
+	pdfkeywords={\docname}
+}
+
+% настройка подсветки кода и окружения для листингов
+\usemintedstyle{colorful}
+\newenvironment{code}{\captionsetup{type=listing}}{}
+
+% шрифт для листингов с лигатурами
+\setmonofont{FiraCode-Regular.otf}[
+	Path = templates/,
+	Contextuals=Alternate
+]
+
+% путь к каталогу с рисунками
+\graphicspath{{fig/}}
+
+% настоящее матожидание
+\newcommand{\MExpect}{\mathsf{M}}
+
+% объявили оператор!
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
